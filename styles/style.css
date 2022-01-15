@@ -1,0 +1,65 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+body{
+    font-family: 'Merriweather', serif;
+}
+.logo{
+    font-size: 30px;
+    margin-left: 50px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+}
+nav, a, i{
+    text-decoration: none;
+    margin-right: 34px;
+    font-size: 16px;
+    border: 0;
+    color: black;
+    padding-top:0px;
+    margin-top: 40px;
+}
+.top-bar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+}
+.top, h1{
+    font-size: 35px;
+    margin-left: 50px;
+}
+.top, p{
+    text-align: justify;
+    margin-left: 50px;
+    font-size: 14px;
+    width: 80%;
+}
+/* .top-image{
+    background-color:turquoise;
+} */
+.btn{
+    background-color: #EC255A;
+    color: white;
+    padding: 10px;
+    margin-left: 50px;
+    border: 0px;
+    font-size: 20px; 
+    font-weight: 700;
+    border-radius: 20px;
+}
+.btn> .fas{
+    padding-left: 5px;
+    margin-top: 0px;
+    margin-left: 20px;
+    color: white;
+}
+.logo img{
+    width: 100%;
+    margin-top: 20px;
+}
+.comoany-logo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
