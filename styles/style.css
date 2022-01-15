@@ -1,7 +1,8 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 body{
-    font-family: 'Merriweather', serif;
+    font-family: 'Fjalla One', sans-serif;
+
 }
 .logo{
     font-size: 30px;
@@ -9,36 +10,58 @@ body{
     padding-bottom: 20px;
     font-weight: 700;
 }
+@media  (max-width: 700px) {
+    .logo{
+        text-align: center;
+    }
+}
+@media  (max-width: 480px) {
+    .logo{
+        text-align: center;
+    }
+}
 nav{
     display: flex;
     justify-content:space-between;
 }
-nav, a, i{
+@media  (max-width: 700px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media  (max-width: 480px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+nav,a, i{
     text-decoration: none;
     margin-right: 34px;
     font-size: 16px;
     border: 0;
     color: black;
     padding-top:0px;
+}
+.fa-search, .fa-cart-plus{
     margin-top: 40px;
 }
 .top-bar{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2,1fr)
 }
-.top, h1{
+.top,h1{
     font-size: 35px;
     margin-left: 50px;
 }
-.top, p{
+.top-info{
     text-align: justify;
     margin-left: 50px;
     font-size: 14px;
     width: 80%;
 }
-/* .top-image{
-    background-color:turquoise;
-} */
+
 .btn{
     background-color: #EC255A;
     color: white;
@@ -46,20 +69,141 @@ nav, a, i{
     margin-left: 50px;
     border: 0px;
     font-size: 20px; 
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
-.btn> .fas{
+.btn>.fa-arrow-right{
     padding-left: 5px;
     margin-top: 0px;
     margin-left: 20px;
     color: white;
 }
+.btn:hover{
+    background-color: #383CC1;
+    transition: 1s;
+}
+
+/* for top bar */
+
+@media  (max-width: 700px) {
+    .top-bar{
+        flex-direction: column;
+    }
+}
+@media  (max-width: 480px) {
+    .top-bar{
+        flex-direction: column;
+    }
+}
+hr{
+    border: 1px solid #CAD5E2;
+    width: 80%;
+}
 .logo img{
     width: 100%;
     margin-top: 20px;
 }
-.comoany-logo{
+.company-logo{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    width: 80%;
+    margin-left: 100px;
 }
+@media  (max-width: 700px) {
+    .company-logo{
+        flex-direction: column;
+    }
+}
+
+@media  (max-width: 480px) {
+    .company-logo{
+        flex-direction: column;
+    }
+}
+.sec-3{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+@media  (max-width: 480px) {
+    .sec-3{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media  (max-width: 700px) {
+
+.sec-3{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.full-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media  (max-width: 700px) {
+    .full-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media  (max-width: 480px) {
+    .full-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+}
+
+.content-section{
+    margin-left: 40px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+.fa-star{
+    color: #FB8200;
+    margin: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    
+}
+.fa-star-half-alt{
+    color:#FB8200 ;
+    padding: 0;
+    font-size: 14px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+}
+.information{
+    font-size: 20px;
+}
+.see-more{
+    color: #EC255A;
+    float: right;
+    margin-top: 10px;
+    padding: 10px;
+}
+.more, .fa-arrow-right{
+    margin-left: 10px;
+    color: #EC255A;
+}
+
+footer{
+    background-color: #242B2E;
+    padding: 15px;
+}
+footer, h2 p{
+    color: white;
+    text-align: center;
+}
+.fab{
+    color: white;
+    margin: 5px;
+}
+
